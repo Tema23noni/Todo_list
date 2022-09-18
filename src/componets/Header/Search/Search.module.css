@@ -1,0 +1,76 @@
+.Search{
+    animation: search 1s  1;
+    margin-left: 20px;
+}
+.btnSearcher{
+    width: 26px;
+    height: 26px;
+    filter: invert(1);
+
+}
+.btn{
+    background: none;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+}
+.inputTask{
+    animation: input 1s 1;
+    width: 400px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    
+}
+@keyframes input{
+    from{
+        width: 0;
+        opacity: 0;
+    }to{
+        opacity: 1;
+        width: 400px;
+    }
+}
+@keyframes search{
+    from{
+        margin-left: -100px;
+    }to{
+        margin-left: 0px;    
+    }
+}
+@media (max-width : 500px) {
+    .Search{
+        margin-left: 0;
+    }.inputTask{
+        animation: inputMob 1s 1;
+        width: 100px;
+        
+        
+    }
+}
+@keyframes inputMob{
+    from{
+        width: 0;
+        opacity: 0;
+    }to{
+        opacity: 1;
+        width: 100px;
+    }
+}
+@media (max-width : 700px) and (min-width:501px) {
+    .Search{
+        margin-left: 0;
+    }.inputTask{
+        animation: inputLap 1s 1;
+        width: 200px;
+        
+        
+    }
+}
+@keyframes inputLap{
+    from{
+        width: 0;
+        opacity: 0;
+    }to{
+        opacity: 1;
+        width: 100px;
+    }
+}

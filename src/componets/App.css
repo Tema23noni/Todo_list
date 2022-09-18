@@ -1,0 +1,142 @@
+
+.App {
+  text-align: center;
+}
+
+.text-count{
+  text-align: center;
+  
+}
+
+.removeTask{
+  margin: 0 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.todoTasks{
+  animation: slide 1s 1 ;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #cecece;
+  margin: 20px;
+  left: 0px;
+}
+.post-enter{
+  opacity: 0;
+}
+.post-enter-active{
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+.post-exit{
+  opacity: 1;
+}
+.post-exit-active{
+  opacity: 0;
+  transition: opacity 1S ease-in;
+}
+@keyframes slide {
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+  }
+}
+.index{
+  margin: 0 20px;
+}
+.form{
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+.input-form{
+  width: 80%;
+  font-size: 13px;
+  height: 20px;
+    padding: 6px 0 4px 10px;
+    border: 2px solid #cecece;
+    background: #f9f9f9;
+    font-size: 18px;
+  
+}
+.button-form{
+  width: 20%;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  background: rgb(65, 65, 65);
+}
+.input-form::placeholder{
+  text-align: center;
+  font-size: 16px;
+}
+
+.nullTask{
+  animation: nullTask 4s  infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+@keyframes nullTask{
+  0%{
+      font-size: 26px;
+  }50%{
+    font-size: 16px;
+  }100%{
+      font-size: 26px;   
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.button-form{
+  width: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+
+}
+.nullTask{
+  text-transform: uppercase;
+  
+}
+.input-form{
+  width: 100%;
+  height: 30px;
+}
